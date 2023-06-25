@@ -114,23 +114,51 @@ export default {
       boxes: [
         {
           id: 1,
-          nome: "Box1",
+          nome: "Box 1",
         },
         {
           id: 2,
-          nome: "Box2",
+          nome: "Box 2",
         },
         {
           id: 3,
-          nome: "Box3",
+          nome: "Box 3",
         },
         {
           id: 4,
-          nome: "Box4",
+          nome: "Box 4",
         },
         {
           id: 5,
-          nome: "Box5",
+          nome: "Box 5",
+        },
+        {
+          id: 6,
+          nome: "Box Baixa 1",
+        },
+        {
+          id: 7,
+          nome: "Box Baixa 2",
+        },
+        {
+          id: 8,
+          nome: "Box Baixa 3",
+        },
+        {
+          id: 9,
+          nome: "Box divisoria 1",
+        },
+        {
+          id: 10,
+          nome: "Caixa Papelão 1",
+        },
+        {
+          id: 11,
+          nome: "Caixa Papelão 2",
+        },
+        {
+          id: 12,
+          nome: "Embrapi",
         },
       ],
       showModal: false,
@@ -152,7 +180,7 @@ export default {
   methods: {
     goToList(idBox) {
       console.log(idBox);
-      this.$router.push("lista");
+      this.$router.push({ name: "lista", params: { id: idBox } });
     },
     resetForm() {
       this.$refs.boxForm.resetFields();

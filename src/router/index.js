@@ -48,7 +48,7 @@ const routes = [
     component: GerenciamentoBoxView
   },
   {
-    path: '/lista',
+    path: '/lista/:id',
     name: 'lista',
     component: ListaView
   },
